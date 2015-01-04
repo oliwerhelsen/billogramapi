@@ -28,6 +28,13 @@ Features
 API
 ---
 
+```
+API-USER = Get this from the settings under your profile
+API-PASSWORD = Get this from the settings under your profile
+isSandbox = Defiend if this is a sandbox or a production call
+
+var billogram = new BILLOGRAMAPI(API-USER, API-PASSWORD, isSandbox);
+```
 ### addCustomer(customerData, callback)
 
 Create customer
@@ -38,7 +45,7 @@ Example usage
 ```javascript
 var BILLOGRAMAPI = require('billogramapi').Customers;
 
-var billogram = new BILLOGRAMAPI(API-USER, API-PASSWORD);
+var billogram = new BILLOGRAMAPI(API-USER, API-PASSWORD, true);
 
 var customerData = {
 	    "name": "Peter Jonsson",
@@ -77,7 +84,7 @@ Example usage
 ```javascript
 var BILLOGRAMAPI = require('billogramapi').Customers;
 
-var billogram = new BILLOGRAMAPI(API-USER, API-PASSWORD);
+var billogram = new BILLOGRAMAPI(API-USER, API-PASSWORD, true);
 
 var customerID = 1234;
 
@@ -102,7 +109,7 @@ Example usage
 ```javascript
 var BILLOGRAMAPI = require('billogramapi').Customers;
 
-var billogram = new BILLOGRAMAPI(API-USER, API-PASSWORD);
+var billogram = new BILLOGRAMAPI(API-USER, API-PASSWORD, true);
 
 billogram.getCustomers(function (error, result) {
           if (error) {
@@ -125,7 +132,7 @@ Example usage
 ```javascript
 var BILLOGRAMAPI = require('billogramapi').Customers;
 
-var billogram = new BILLOGRAMAPI(API-USER, API-PASSWORD);
+var billogram = new BILLOGRAMAPI(API-USER, API-PASSWORD, true);
 
 var customerID = 1234;
 
