@@ -1,6 +1,6 @@
 {
   "name": "billogramapi",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Wrapper for Billograms API",
   "main": "index.js",
   "scripts": {
