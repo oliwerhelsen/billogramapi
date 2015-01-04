@@ -6,11 +6,12 @@
 var _ = require('lodash');
 
 /**
- * Extend user's controller
+ * Extend Billogram module
  */
 module.exports = _.extend(
-	require('./users/users.authentication.server.controller'),
-	require('./users/users.authorization.server.controller'),
-	require('./users/users.password.server.controller'),
-	require('./users/users.profile.server.controller')
+	require('./lib/billogram.invoices'),
+	require('./lib/billogram.customers'),
+	require('./lib/billogram.items'),
+	require('./lib/billogram.settings'),
+	require('./lib/billogram.logotype')
 );
