@@ -19,7 +19,7 @@ npm install billogramapi --save
 Features
 --------
 
--- DROPLETS
+-- Customer
 * Create customer
 * Fetch single customer
 * List customers
